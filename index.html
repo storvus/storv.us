@@ -3,7 +3,7 @@
 <head>
     <title>Anton Shcherbatov</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="/img/favico.png">
+    <link rel="icon" type="image/x-icon" href="static/img/favico.png">
     <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="static/css/styles.css" rel="stylesheet" type="text/css">
 </head>
@@ -12,176 +12,242 @@
     <div class="row">
         <div class="col-sm-12 offset-sm-0 col-lg-8 offset-lg-2 mt-3">
             <div class="row">
-                <div class="d-flex justify-content-md-between">
-                    <div class="col-4 d-flex justify-content-md-between">
-                        <a href="https://www.linkedin.com/in/anton-shcherbatov/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/> </svg>
-                        </a>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/> </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                <div class="col">
+                    <div class="d-md-flex justify-content-md-between">
+                        <div class="col-12 col-md-4 m-md-0 d-flex justify-content-between">
+                            <div>
+                                <a href="tel:+381616122595" title="Call me" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/> </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="mailto:anton.scherbatov@gmail.com" title="Mail me" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16"> <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/> <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/> </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://ashcherbatov.t.me/" target="_blank" title="Telegram" class="text-black" rel="noreferrer nofollow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/> </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/anton-shcherbatov/" rel="noreferrer nofollow" target="_blank" title="Linkedin" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/> </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/storvus/" rel="noreferrer nofollow" target="_blank" title="Github" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/> </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://leetcode.com/storvus/" rel="noreferrer nofollow" target="_blank" title="Leetcode" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 24 24"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="static/cv.pdf" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"> <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/> <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/> </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="https://blog.storv.us" title="Blog" class="text-black">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16"> <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/> </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 mt-4 mb-4 m-md-0">
+                            <figure class="text-end">
+                                <blockquote class="blockquote">
+                                    <p>If ignorance is bliss, then slap the grin off my face.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Solomon Torvus in <cite title="Source Title">Harbinger</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>About me</h5>
+                            <p>
+                                Good day! <br/>
+                                I'm a python developer with...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Skills</h5>
+                            <div>
+                                <span class="text-muted">Python</span> |
+                                <span class="text-muted">Typescript</span> |
+                                <span class="text-muted">Kotlin</span> |
+                                <span class="text-muted">Django</span> |
+                                <span class="text-muted">Flask</span> |
+                                <span class="text-muted">Bottle</span> |
+                                <span class="text-muted">React</span> |
+                                <span class="text-muted">Docker</span> |
+                                <span class="text-muted">K8s</span> |
+                                <span class="text-muted">Postgresql</span> |
+                                <span class="text-muted">NoSQL</span> |
+                                <span class="text-muted">GraphQL</span> |
+                                <span class="text-muted">HTML</span> |
+                                <span class="text-muted">CSS</span> |
+                                <span class="text-muted">Perl</span> |
+                                <span class="text-muted">PHP</span>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="progress mb-4" style="height: 30px;">
+                                        <div class="progress-bar text-black" role="progressbar" aria-label="English - B1" style="width: 50%; background: #84d6ff" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">English - B1</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar text-black" role="progressbar" aria-label="Serbian - B1" style="width: 50%; background: #84d6ff" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Serbian - B1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Experience</h5>
+                            <div class="main-timeline">
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <div class="timeline-year d-none d-md-block" style="left: -25px;">2014 - ...</div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item border-0">
+                                                <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
+                                                    <h5 class="mb-1">Senior Software Engineer</h5>
+                                                    <h6><a href="https://quantumsoft.pro/" title="Quantumsoft" class="text-black" rel="noreferrer nofollow">Quantumsoft</a></h6>
+                                                </div>
+                                                <small class="d-block d-md-none">July, 2014 - present</small>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <a href="https://www.invitae.com/" title="Invitae" class="text-black-50" rel="noreferrer nofollow">Invitae</a>
+                                                <p>
+                                                    Developing LIMS (Laboratory Information Management System)
+                                                </p>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <a href="https://performica.com/" title="Performica" class="text-black-50" rel="noreferrer nofollow">Performica</a><br />
+                                                <p class="justify-content-center">
+                                                    System of employees relationship management
+                                                </p>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <div class="text-end">
+                                                    <span class="text-muted">Python</span> |
+                                                    <span class="text-muted">Typescript</span> |
+                                                    <span class="text-muted">Kotlin</span> |
+                                                    <span class="text-muted">Django</span> |
+                                                    <span class="text-muted">Flask</span> |
+                                                    <span class="text-muted">Bottle</span> |
+                                                    <span class="text-muted">React</span> |
+                                                    <span class="text-muted">Docker</span> |
+                                                    <span class="text-muted">K8s</span> |
+                                                    <span class="text-muted">Postgresql</span> |
+                                                    <span class="text-muted">NoSQL</span> |
+                                                    <span class="text-muted">GraphQL</span>
+                                                </div>
+                                            </li>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16"> <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/> <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/> </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"> <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/> <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/> </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16"> <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/> </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/> </svg>
-                    </div>
-                    <figure class="text-end">
-                        <blockquote class="blockquote">
-                            <p>If ignorance is bliss, then slap the grin off my face.</p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer">
-                            Solomon Torvus in <cite title="Source Title">Harbinger</cite>
-                        </figcaption>
-                    </figure>
-                </div>
-                <h5>About me</h5>
-                <p>
-                    Good day! <br/>
-                    I'm a python developer with...
-                </p>
-                <h5>Skills</h5>
-                <div>
-                    <span class="text-muted">Python</span> |
-                    <span class="text-muted">Typescript</span> |
-                    <span class="text-muted">Kotlin</span> |
-                    <span class="text-muted">Django</span> |
-                    <span class="text-muted">Flask</span> |
-                    <span class="text-muted">Bottle</span> |
-                    <span class="text-muted">React</span> |
-                    <span class="text-muted">Docker</span> |
-                    <span class="text-muted">K8s</span> |
-                    <span class="text-muted">Postgresql</span> |
-                    <span class="text-muted">NoSQL</span> |
-                    <span class="text-muted">GraphQL</span> |
-                    <span class="text-muted">HTML</span> |
-                    <span class="text-muted">CSS</span> |
-                    <span class="text-muted">Perl</span> |
-                    <span class="text-muted">PHP</span> |
-                </div>
-                <h5 class="mt-5">Experience</h5>
-                <div class="main-timeline">
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="timeline-year d-none d-md-block" style="left: -25px;">2014 - ...</div>
-                            <ul class="list-group">
-                                <li class="list-group-item border-0">
-                                    <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
-                                        <h5 class="mb-1">Senior Software Engineer</h5>
-                                        <h5><a href="https://quantumsoft.pro/" title="Quantumsoft" class="text-black-50">Quantumsoft</a></h5>
+                                        </ul>
                                     </div>
-                                    <small class="d-block d-md-none">July, 2014 - present</small>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <a href="https://www.invitae.com/" title="Invitae" class="text-black-50">Invitae</a>
-                                    <p>
-                                        Developing LIMS (Laboratory Information Management System)
-                                    </p>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <a href="https://performica.com/" title="Performica" class="text-black-50">Performica</a><br />
-                                    <p class="justify-content-center">
-                                        System of employees relationship management
-                                    </p>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <div class="text-end">
-                                        <span class="text-muted">Python</span> |
-                                        <span class="text-muted">Typescript</span> |
-                                        <span class="text-muted">Kotlin</span> |
-                                        <span class="text-muted">Django</span> |
-                                        <span class="text-muted">Flask</span> |
-                                        <span class="text-muted">Bottle</span> |
-                                        <span class="text-muted">React</span> |
-                                        <span class="text-muted">Docker</span> |
-                                        <span class="text-muted">K8s</span> |
-                                        <span class="text-muted">Postgresql</span> |
-                                        <span class="text-muted">NoSQL</span> |
-                                        <span class="text-muted">GraphQL</span>
-                                    </div>
-                                </li>
+                                </div>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <div class="timeline-year d-none d-md-block" style="left: -46px;">2010 - 2014</div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item border-0">
+                                                <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
+                                                    <h5 class="mb-1">Full-stack Web Developer</h5>
+                                                    <h6><a href="https://itscript.com/" title="Itscript.com" class="text-black" target="_blank" rel="nofollow norefe">Itscript.com</a></h6>
+                                                </div>
+                                                <small class="d-block d-md-none">May, 2010 - July, 2014</small>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <a href="https://batchrooms.com/" title="Bathrooms.com" class="text-black-50" rel="noreferrer nofollow">Bathrooms.com</a>
+                                                <p>
 
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="timeline-year d-none d-md-block" style="left: -46px;">2010 - 2014</div>
-                            <ul class="list-group">
-                                <li class="list-group-item border-0">
-                                    <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
-                                        <h5 class="mb-1">Full-stack Web Developer in <a href="http://itscript.com/" class="text-black-50">Itscript.com</a></h5>
-                                        <small>May, 2010 - July, 2014</small>
-                                    </div>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <a href="https://www.invitae.com/">Bathrooms.com</a>
-                                    <p>
-                                        It's a shop in UK with thousands clients from Europe and USA.
-                                        I played key role in development of most parts of the shop:
-                                        1) product/category pages with multiple functionality (inheritance, attributes etc)
-                                        2) cart, checkout, sales in depends on type of client
-                                        3) economic calculations through admin and VBA scripts
-                                        4) communication with clients using Zendesk API
-                                        5) Load balancer on Nginx in depends on type of content and user's country
-                                        6) Selenium tests to repeat user actions
-                                        Technologies: Perl, Zendesk, MySQL, Sphinx, Memcached, Nginx, load balancer, A/B tests, HTML, CSS, Mercurial, Selenium, Teamcity, PSD-to-HTML, VBA
+                                                    It's a shop in UK with thousands clients from Europe and USA.
+                                                    I played key role in development of most parts of the shop:
+                                                    1) product/category pages with multiple functionality (inheritance, attributes etc)
+                                                    2) cart, checkout, sales in depends on type of client
+                                                    3) economic calculations through admin and VBA scripts
+                                                    4) communication with clients using Zendesk API
+                                                    5) Load balancer on Nginx in depends on type of content and user's country
+                                                    6) Selenium tests to repeat user actions
+                                                    Technologies: Perl, Zendesk, MySQL, Sphinx, Memcached, Nginx, load balancer, A/B tests, HTML, CSS, Mercurial, Selenium, Teamcity, PSD-to-HTML, VBA
 
-                                    </p>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <p class="justify-content-center">
-                                        2. Developing of another projects:
-                                        1) osn.com - software for sea ships
-                                        2) kelprecords.com - website for radio station
-                                        3) gatetoparis.com - rent apartments in Europe
-                                        4) peoplesclub.com - website of USA's clubs, bars etc.
-                                        Technologies: jQuery, Wordpress, Yii, PHP1
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="timeline-year d-none d-md-block">2009</div>
-                            <ul class="list-group">
-                                <li class="list-group-item border-0">
-                                    <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
-                                        <h5 class="mb-1">Full-stack Web Developer in <a href="http://r70.ru/" class="text-black-50">R70</a></h5>
-                                        <small>June, 2009 - May, 2010</small>
+                                                </p>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <span class="text-black-50" rel="noreferrer nofollow">Developing of other projects</span><br />
+                                                <p class="justify-content-center">
+                                                    1) osn.com - software for sea ships
+                                                    2) kelprecords.com - website for radio station
+                                                    3) gatetoparis.com - rent apartments in Europe
+                                                    4) peoplesclub.com - website of USA's clubs, bars etc.
+                                                    Technologies: jQuery, Wordpress, Yii, PHP1
+                                                </p>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <div class="text-end">
+                                                    <span class="text-muted">Perl</span>
+                                                </div>
+                                            </li>
+
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <p>
-                                        Creating and supporting small sites using company own framework
-                                        Technologies: PHP, HTML, CSS, JS, PSD-to-HTML
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="timeline-year d-none d-md-block">2004</div>
-                            <ul class="list-group">
-                                <li class="list-group-item border-0">
-                                    <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
-                                        <h5 class="mb-1">BA in <a href="https://tusur.ru/en" class="text-black-50">TUSUR</a></h5>
-                                        <small>September, 2004 - June, 2009</small>
+                                </div>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <div class="timeline-year d-none d-md-block">2009</div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item border-0">
+                                                <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
+                                                    <h5 class="mb-1">Full-stack Web Developer</h5>
+                                                    <h6><a href="https://r70.ru/" title="R70" class="text-black" target="_blank" rel="nofollow norefe">R70</a></h6>
+                                                </div>
+                                                <small class="d-block d-md-none">June, 2009 - May, 2010</small>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <p>
+                                                    Creating and supporting small sites using company own framework
+                                                    Technologies: PHP, HTML, CSS, JS, PSD-to-HTML
+                                                </p>
+                                            </li>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <p>
-                                        Tomsk State University of Control Systems and Radioelectronics
-                                    </p>
-                                </li>
-                            </ul>
+                                </div>
+                                <div class="timeline">
+                                    <div class="timeline-content">
+                                        <div class="timeline-year d-none d-md-block">2004</div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item border-0">
+                                                <div class="d-md-flex w-100 justify-content-md-between d-sm-block">
+                                                    <h5 class="mb-1">Bachelor</h5>
+                                                    <h6><a href="https://tusur.ru/en" title="Tomsk State University of Control Systems and Radioelectronics" class="text-black" target="_blank" rel="nofollow norefe">TUSUR</a></h6>
+                                                </div>
+                                                <small class="d-block d-md-none">September, 2004 - June, 2009</small>
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                <p>
+                                                    Tomsk State University of Control Systems and Radioelectronics
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                Blog
             </div>
         </div>
     </div>
