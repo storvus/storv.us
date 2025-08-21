@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telegram Bot Send</title>
+</head>
+<body>
+<button id="send">Miss me?</button>
+
+<script>
+    const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
+    const CHAT_ID = "182812766";
+    const TEXT = "Привет! Это сообщение от JS через fetch 🚀";
+
+    document.getElementById("send").addEventListener("click", () => {
+        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                text: TEXT
+            })
+        })
+    });
+</script>
+</body>
+</html>
