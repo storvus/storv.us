@@ -11,7 +11,9 @@
     const imageUrl = "https://storvus.github.io/storv.us/images/quest0/qrcode.png";
     const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
     const CHAT_ID = "182812766";
-    const TEXT = "Начнем игру!";
+    const TEXT = "С днем рождения, агент Морковка! Мир в опасности и тебе предстоить спасти его! " +
+        "Но ты не справишься в одиночку - множество верных друзей придут тебе на помощь, чтобы спасти одного из вас! " +
+        "Ты готов? Тогда начинаем!";
 
     window.onload = () => {
         fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -30,7 +32,6 @@
             body: JSON.stringify({
                 chat_id: CHAT_ID,
                 photo: imageUrl,
-                caption: "Вот твой QR-код 📷"
             })
         })
     }
