@@ -6,7 +6,7 @@ from PIL import Image
 
 # qrcode.make("http://localhost:63342/storv.us/quest107c2c93-3680-430d-be12-786dce7769d1.html?_ijt=291lt058hen75437pdogu0j7ni").save("qrcode.png")
 
-url = "https://storvus.github.io/storv.us/quest207c2c93-3680-430d-be12-786dce7769d1.html"
+url = "https://storvus.github.io/storv.us/quest307c2c93-3680-430d-be12-786dce7769d1.html"
 qr = qrcode.QRCode(
     version=1,  # размер (1–40)
     error_correction=qrcode.constants.ERROR_CORRECT_H,  # высокий уровень коррекции (чтобы не повредился при вставке лого)
@@ -18,7 +18,7 @@ qr.make(fit=True)
 img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
 
 # Добавим лого
-logo = Image.open("one.png")  # сюда можно свой файл
+logo = Image.open("two.png")  # сюда можно свой файл
 logo_size = 80  # размер лого
 
 # Масштабируем логотип
@@ -28,4 +28,4 @@ logo.thumbnail((logo_size, logo_size))
 pos = ((img.size[0] - logo.size[0]) // 2, (img.size[1] - logo.size[1]) // 2)
 img.paste(logo, pos, mask=logo if logo.mode == "RGBA" else None)
 
-img.save("images/quest1/qrcode.png")
+img.save("images/quest2/qrcode.png")
