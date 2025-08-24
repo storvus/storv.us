@@ -6,8 +6,7 @@
 </head>
 <body>
 <script>
-    const visitUrl = "https://storvus.github.io/storv.us/images/start/visit-krab.jpg";
-    const qrCodeUrl = "https://storvus.github.io/storv.us/images/start/qrcode.png";
+    const qrCodeUrl = "https://storvus.github.io/storv.us/images/start/krab-qrcode.png";
     const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
     const CHAT_ID = "182812766";
     const TEXT = "Приветствую, спецагент Морковка! Я агент Офелия. Я пришла поручить тебе сверхсекретное задание под кодовым названием \"С Днем Рождения!\"! " +
@@ -30,7 +29,7 @@
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 chat_id: CHAT_ID,
-                photo: visitUrl,
+                photo: qrCodeUrl,
             })
         })
     }
