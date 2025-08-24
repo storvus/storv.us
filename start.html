@@ -5,15 +5,14 @@
     <title>Telegram Bot Send</title>
 </head>
 <body>
-<button id="send">Miss me?</button>
-
 <script>
-    const imageUrl = "https://storvus.github.io/storv.us/images/quest0/qrcode.png";
+    const visitUrl = "https://storvus.github.io/storv.us/images/start/visit-krab.jpg";
+    const qrCodeUrl = "https://storvus.github.io/storv.us/images/start/qrcode.png";
     const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
     const CHAT_ID = "182812766";
-    const TEXT = "С днем рождения, агент Морковка! Мир в опасности и тебе предстоить спасти его! " +
-        "Но ты не справишься в одиночку - множество верных друзей придут тебе на помощь, чтобы спасти одного из вас! " +
-        "Ты готов? Тогда начинаем!";
+    const TEXT = "Приветствую, спецагент Морковка! Я агент Офелия. Я пришла поручить тебе сверхсекретное задание под кодовым названием \"С Днем Рождения!\"! " +
+        "Но ты не справишься в одиночку - множество твоих коллег-агентов придут тебе на помощь! " +
+        "Свяжись с ними, чтобы получить подсказки и помощь в решении задач. Начни с агента Крабовая Палочка. Вот его досье!";
 
     window.onload = () => {
         fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -31,7 +30,15 @@
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 chat_id: CHAT_ID,
-                photo: imageUrl,
+                photo: visitUrl,
+            })
+        })
+        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                chat_id: CHAT_ID,
+                photo: qrCodeUrl,
             })
         })
     }
