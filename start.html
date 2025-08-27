@@ -6,12 +6,12 @@
 </head>
 <body>
 <script>
-    const qrCodeUrl = "https://storvus.github.io/storv.us/images/start/krab-qrcode.png";
     const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
     const CHAT_ID = "182812766";
     const TEXT = "Приветствую, спецагент Морковка! Я агент Офелия. Я пришла поручить тебе сверхсекретное задание под кодовым названием \"С Днем Рождения!\"! " +
-        "Но ты не справишься в одиночку - множество твоих коллег-агентов придут тебе на помощь! " +
-        "Свяжись с ними, чтобы получить подсказки и помощь в решении задач. Начни с агента Крабовая Палочка. Вот его досье!";
+        "\nНо ты не справишься в одиночку - множество твоих коллег-агентов придут тебе на помощь! " +
+        "\nЭтот канал связи слишком ненадежен и я постаралась использовать другие доступные опции. Для начала операции " +
+        "тебе предстоит отыскать первый *ключ*";
 
     window.onload = () => {
         fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -21,15 +21,8 @@
             },
             body: JSON.stringify({
                 chat_id: CHAT_ID,
-                text: TEXT
-            })
-        })
-        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                chat_id: CHAT_ID,
-                photo: qrCodeUrl,
+                text: TEXT,
+                parse_mode: "markdown"
             })
         })
     }
