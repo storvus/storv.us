@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telegram Bot Send</title>
+</head>
+<body>
+<canvas id="matrixCanvas"></canvas>
+<script>
+    // Get canvas and context
+    const canvas = document.getElementById('matrixCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Set canvas dimensions
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    // Character pool
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789アァカサタナハマヤラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユルグズヅブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨロヲゴゾドボポヴッン';
+
+    // Array to store y-positions of each column
+    const columns = Math.floor(canvas.width / 20); // Assuming 20px character width
+    const yPos = Array(columns).fill(0);
+
+    // Drawing function
+    function draw() {
+        // Fade effect
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Text styling
+        ctx.fillStyle = '#0F0'; // Green
+        ctx.font = '15px monospace';
+
+        // Draw characters
+        yPos.forEach((y, index) => {
+            const text = characters.charAt(Math.floor(Math.random() * characters.length));
+            const x = index * 20; // Column position
+
+            ctx.fillText(text, x, y);
+
+            // Reset or advance y-position
+            if (y > canvas.height && Math.random() > 0.975) {
+                yPos[index] = 0;
+            } else {
+                yPos[index] = y + 20;
+            }
+        });
+    }
+
+    // Animation loop
+    setInterval(draw, 50); // Adjust interval for speed
+</script>
+</body>
+</html>
