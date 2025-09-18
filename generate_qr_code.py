@@ -6,7 +6,7 @@ from PIL import Image
 
 # qrcode.make("http://localhost:63342/storv.us/quest107c2c93-3680-430d-be12-786dce7769d1.html?_ijt=291lt058hen75437pdogu0j7ni").save("qrcode.png")
 
-url = "https://storvus.github.io/storv.us/matrix.html"
+url = "https://storvus.github.io/storv.us/capuleti.html"
 qr = qrcode.QRCode(
     version=1,  # размер (1–40)
     error_correction=qrcode.constants.ERROR_CORRECT_H,  # высокий уровень коррекции (чтобы не повредился при вставке лого)
@@ -28,4 +28,4 @@ img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
 # pos = ((img.size[0] - logo.size[0]) // 2, (img.size[1] - logo.size[1]) // 2)
 # img.paste(logo, pos, mask=logo if logo.mode == "RGBA" else None)
 
-img.save("images/matrix.png")
+img.save("images/capuleti.png")
