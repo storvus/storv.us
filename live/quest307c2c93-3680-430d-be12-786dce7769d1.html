@@ -6,10 +6,14 @@
 </head>
 <body>
 <script>
-    const qrCodeUrl = "https://storvus.github.io/storv.us/images/start/ursula-qrcode.png";
     const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
     const CHAT_ID = "182812766";
-    const TEXT = "Спецагент Морковка! Я не поняла! Что ты там делаешь? Почему ты не отвечаешь на мои сообщения? Пожалуйста, скажи мне, что с тобой всё в порядке!";
+    const TEXT = "Спецагент Морковка! Я не поняла! Что ты там делаешь?\n" +
+        "Пожалуйста, скажи мне, что с тобой всё в порядке! Эти... агенты опять загнали тебя не пойми куда?!\n" +
+        "Я же просила их отвлечь тебя на минуту, пока я прячу подарок!\n" +
+        "Срочно возвращайся! Ты найдешь свой подарок дома у агента Сашеньки!\n" +
+        "И перестань звать меня босс. Для тебя я просто - Офелия";
+        "\n\nP.S. Розовая всё ещё голодная!";
 
     window.onload = () => {
         fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
@@ -19,15 +23,8 @@
             },
             body: JSON.stringify({
                 chat_id: CHAT_ID,
-                text: TEXT
-            })
-        })
-        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                chat_id: CHAT_ID,
-                photo: qrCodeUrl,
+                text: TEXT,
+                parse_mode: "markdown"
             })
         })
     }
