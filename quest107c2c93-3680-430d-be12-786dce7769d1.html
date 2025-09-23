@@ -1,36 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 <head>
-    <meta charset="UTF-8">
-    <title>Telegram Bot Send</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interaktivna mapa – primer</title>
+    <script>
+        window.location.replace('https://jevremovac.bio.bg.ac.rs/');
+    </script>
 </head>
 <body>
-<script>
-    const qrCodeUrl = "https://storvus.github.io/storv.us/images/start/ursula-qrcode.png";
-    const BOT_TOKEN = "8295493933:AAG_g_jw_VU4xua97r_WByYrdIsHzc_HwRU";
-    const CHAT_ID = "75659375";
-    const TEXT = "Слишком кровожаден агент Крабовая Полочка. Однажды это погубит его. Он упомянул другого агента. Вот ее досье!";
-
-    window.onload = () => {
-        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                chat_id: CHAT_ID,
-                text: TEXT
-            })
-        })
-        fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendPhoto`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                chat_id: CHAT_ID,
-                photo: qrCodeUrl,
-            })
-        })
-    }
-</script>
 </body>
 </html>
